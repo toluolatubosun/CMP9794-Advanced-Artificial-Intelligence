@@ -1,14 +1,16 @@
 # CMP9794 Advanced Artificial Intelligence
+
 This repository houses the devcontainer and docker image for the Advanced Artificial Intelligence module at the University of Lincoln.
+
 ## What is Docker?
+
 Docker is a platform which allows developers to create and share containers.
 
-A container is an environment separate from your main operating system, which includes all of the requirements to run a piece of software. You can think of it like a box which you can take anywhere,
-and when opened, the software inside works exactly the same way, no matter where you are running it.
+A container is an environment separate from your main operating system, which includes all of the requirements to run a piece of software. You can think of it like a box which you can take anywhere, and when opened, the software inside works exactly the same way, no matter where you are running it.
 
 This helps us technicians to give every module the exact coding environment it needs, without causing any conflicts.
 
-If you would like to learn more about how Docker works in your labs, please feel free to contact us at technician@lincoln.ac.uk.
+This image was created by the SEPS Technicians team. If you would like to learn more about how Docker works in your labs, please feel free to contact us at technician@lincoln.ac.uk, or if you have any issues with this container you can contact us via our help form by scanning the sticker on your desk or leaving an issue on this repository.
 
 ## How do I use the Docker container for this module at home?
 
@@ -22,7 +24,7 @@ These prerequisites are the same for every Computer Science module using Docker 
 
 2. Download and install VSCode: https://code.visualstudio.com/
 
-3. Install the Remote Development extension for VSCode: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+3. Install the Remote Development extension pack for VSCode: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
 ### Process
 
@@ -44,3 +46,7 @@ If you are struggling to get this to work, try these common troubleshooting step
 2. Make sure Docker Desktop is open and running.
 3. Make sure Docker Desktop is updated.
 4. Make sure VS Code has the Remote Development extension pack. You can install this through the Extensions tab in VS Code if it isn't working through the web link above.
+
+### What if I don't want to use a Devcontainer?
+
+Feel free to build the `.devcontainer/Dockerfile` and use it how you want.

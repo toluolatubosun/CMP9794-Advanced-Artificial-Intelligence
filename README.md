@@ -12,6 +12,12 @@ This helps us technicians to give every module the exact coding environment it n
 
 This image was created by the SEPS Technicians team. If you would like to learn more about how Docker works in your labs, please feel free to contact us at technician@lincoln.ac.uk, or if you have any issues with this container you can contact us via our help form by scanning the sticker on your desk or leaving an issue on this repository.
 
+### What is a Devcontainer? Is it different?
+
+Nope, they're just an easy way to launch a Docker container. This is because [Devcontainers](https://containers.dev/) are a standard built by Microsoft designed to make it easier to get started with a Docker container.
+
+If you do not want to use a Devcontainer, feel free to build the `.devcontainer/Dockerfile`, and launch it manually. But, we reccomend that you use this Devcontainer to make it easier for yourself.
+
 ## Which Version Should I Use?
 
 If you are using a Lab PC, select the option that includes `NVIDIA GPU` for better performance.
@@ -53,7 +59,3 @@ If you are struggling to get this to work, try these common troubleshooting step
 2. Make sure Docker Desktop is open and running.
 3. Make sure Docker Desktop is updated.
 4. Make sure VS Code has the Remote Development extension pack. You can install this through the Extensions tab in VS Code if it isn't working through the web link above.
-
-### What if I don't want to use a Devcontainer?
-
-Feel free to build the `.devcontainer/Dockerfile` and use it how you want.

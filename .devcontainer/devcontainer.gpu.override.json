@@ -1,3 +1,0 @@
-{
-  "runArgs": ["--gpus", "all"]
-}

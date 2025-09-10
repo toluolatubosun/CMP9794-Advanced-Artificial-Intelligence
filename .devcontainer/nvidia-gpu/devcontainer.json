@@ -1,7 +1,7 @@
 {
-    "name": "CMP9794 (AAI)",
-    "build": { "dockerfile": "Dockerfile" },
-    "runArgs": [ "--name", "cmp9794-devcontainer" ],
+    "name": "CMP9794 (AAI) - NVIDIA GPU",
+    "build": { "dockerfile": "../Dockerfile" },
+    "runArgs": [ "--name", "cmp9794-devcontainer-gpu", "--gpus", "all" ],
     "remoteUser": "dev",
     "customizations": {
         "vscode": {

@@ -1,0 +1,30 @@
+{
+    "name": "CMP9794 (AAI) - CPU",
+    "build": { "dockerfile": "../Dockerfile" },
+    "runArgs": [ "--name", "cmp9794-devcontainer" ],
+    "remoteUser": "dev",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "terminal.integrated.env.linux": { "PATH": "/opt/conda/bin:${env:PATH}" },
+                "python.defaultInterpreterPath": "/opt/conda/bin/python",
+                "python.condaPath": "/opt/conda/bin/conda"
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-toolsai.jupyter-keymap"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    }
+}

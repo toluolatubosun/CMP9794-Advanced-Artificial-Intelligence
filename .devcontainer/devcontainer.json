@@ -1,6 +1,6 @@
 {
     "name": "CMP9794 (AAI) - NVIDIA GPU",
-    "build": { "dockerfile": "../Dockerfile" },
+    "build": { "dockerfile": "Dockerfile" },
     "runArgs": [ "--name", "cmp9794-devcontainer-gpu", "--gpus", "all" ],
     "postCreateCommand": "python -m ipykernel install --user --name conda-base --display-name 'Python (conda-base)'",
     "remoteUser": "dev",

@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.8.0-cuda12.9-cudnn9-runtime
+FROM pytorch/pytorch:2.8.0-cuda12.9-cudnn9-devel
 
 # Use conda to manage main env, but install missing packages via pip pinned at the specific versions
 RUN pip install --upgrade pip

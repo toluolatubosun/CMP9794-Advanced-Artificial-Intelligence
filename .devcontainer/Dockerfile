@@ -14,8 +14,4 @@ RUN useradd -m -s /bin/bash dev \
 
 # Switch to our dev user
 USER dev
-
-# Give the dev user access to python as a ipykernel (for ipynotebooks)
-RUN python -m ipykernel install --user --name conda-base --display-name "Python (conda-base)"
-
 CMD ["bash"]

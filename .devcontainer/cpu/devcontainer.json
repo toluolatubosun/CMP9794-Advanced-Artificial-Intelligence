@@ -2,7 +2,6 @@
     "name": "CMP9794 (AAI) - CPU",
     "build": { "dockerfile": "../Dockerfile" },
     "runArgs": [ "--name", "cmp9794-devcontainer" ],
-    "postCreateCommand": "python -m ipykernel install --user --name conda-base --display-name 'Python (conda-base)'",
     "remoteUser": "dev",
     "customizations": {
         "vscode": {

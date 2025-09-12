@@ -1,0 +1,26 @@
+{
+    "name": "CMP9794 (AAI) - NVIDIA GPU",
+    "build": { "dockerfile": "Dockerfile" },
+    "runArgs": [ "--name", "cmp9794-devcontainer-gpu", "--gpus", "all" ],
+    "remoteUser": "dev",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "terminal.integrated.env.linux": { "PATH": "/opt/conda/bin:${env:PATH}" },
+                "python.defaultInterpreterPath": "/opt/conda/bin/python",
+                "python.condaPath": "/opt/conda/bin/conda"
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "ms-toolsai.jupyter",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    }
+}
